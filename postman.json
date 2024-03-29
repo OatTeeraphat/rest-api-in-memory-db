@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "1f4a5fc7-5839-4cb9-909b-75b312b9f55d",
+		"name": "BDMS Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "748283"
+	},
+	"item": [
+		{
+			"name": "todo getAllTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/todos",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "todo addNewTodo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"title\": \"Are you doing something ?\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/todos",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "todo markAsCompletedTodo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"title\": \"Are you doing something ?\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/todos/1",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
